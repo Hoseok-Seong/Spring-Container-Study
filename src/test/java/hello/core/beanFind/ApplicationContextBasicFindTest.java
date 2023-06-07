@@ -29,6 +29,8 @@ class ApplicationContextBasicFindTest {
         MemberService memberService = ac.getBean(MemberService.class);
         Assertions.assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
+
+    // 권장되는 방식은 아님
     @Test
     @DisplayName("구체 타입으로 조회")
     void findBeanByType2() {
