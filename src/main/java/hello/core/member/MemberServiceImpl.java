@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component("이름 설정 가능")
+//@Component
 public class MemberServiceImpl implements MemberService{
 
     private final MemberRepository memberRepository;
